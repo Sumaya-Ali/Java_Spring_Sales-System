@@ -8,3 +8,5 @@ However each transaction belongs to one sale only.
 Don't forget to check logging file in Logs folder, and take a look on logback.xml to check logging configuration..
 
 You can fetch this program on http://localhost:8080
+
+Note: check this url if you face any trouble with lombok dependency throught your IDE: https://projectlombok.org/setup/eclipse
