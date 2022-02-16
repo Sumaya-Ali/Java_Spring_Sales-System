@@ -1,0 +1,53 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>60</x><y>80</y><w>230</w><h>190</h></coordinates><panel_attributes>Product
+--
+-id: String
+-name: String
+-description: String
+-category: String
+-creationDate: String
+--
++getAllProducts(): List&lt;Product&gt;
++getProduct(id: String): Product
++addProduct(product: Product): void
++updateProduct(product: Product): void
++deleteProduct(id: String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>80</y><w>210</w><h>180</h></coordinates><panel_attributes>Client
+--
+-id: String
+-name: String
+-lastName: String
+-mobile: String
+--
++getAllClients(): List&lt;Client&gt;
++getClient(id: String): Client
++addClient(client: Client): void
++updateClient(client: Client): void
++deleteClient(id: String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>550</x><y>340</y><w>210</w><h>180</h></coordinates><panel_attributes>Sale
+--
+-id: String
+-seller: String
+-client: Client
+-creationDate: String
+--
++getAllSales(): List&lt;Sale&gt;
++getSale(id: String): Sale
++addSale(sale: Sale): void
++updateSale(sale: Sale): void
++deleteSale(id: String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>50</x><y>340</y><w>360</w><h>190</h></coordinates><panel_attributes>saleTransaction
+--
+-id: String
+-sale: Sale
+-product: Product
+-quantity: int
+-price: float
+--
++getAllSaleTransactions(saleId: String): List&lt;saleTransaction&gt;
++getSaleTransaction(id: String): saleTransaction
++addSaleTransaction(transaction: saleTransaction): void
++updateSaleTransaction(transaction: saleTransaction): void
++deleteSaleTransaction(id: String): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>400</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..n</panel_attributes><additional_attributes>150;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>260</y><w>50</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..n
+m2=1</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>250</y><w>50</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=0..n
+m2=1</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element></diagram>

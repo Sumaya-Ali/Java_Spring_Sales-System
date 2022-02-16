@@ -1,0 +1,604 @@
+{
+	"info": {
+		"_postman_id": "2be1a779-98d7-4a62-acf4-7917d4928b4b",
+		"name": "Sales-System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Products Management",
+			"item": [
+				{
+					"name": "Get  Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "E3A4B8AA-C4D4-47E9-9225-3C20EADF325C"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"E3A4B8AA-C4D4-47E9-9225-3C20EADF325C\",\r\n    \"name\": \"Apple MacBook Air\",\r\n    \"description\": \"8-core CPU and 7-core GPU, 8GB of RAM and 256GB SSD\",\r\n    \"category\" : \"laptop\",\r\n    \"creationDate\": \"22/1/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"E3A4B8AA-C4D4-47E9-9225-3C20EADF325C\",\r\n    \"name\": \"Apple MacBook Air (M1 2020)\",\r\n    \"description\": \"8-core CPU and 8-core GPU, 8GB of RAM and 512GB of storage\",\r\n    \"category\" : \"laptop\",\r\n    \"creationDate\": \"30/1/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clients Management",
+			"item": [
+				{
+					"name": "Get  Clients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Client By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "usxM9pH0h0aGxyzSFZ5TKA=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"usxM9pH0h0aGxyzSFZ5TKA==\",\r\n    \"name\": \"Sumaya\",\r\n    \"lastName\": \"Ali\",\r\n    \"mobile\" : \"00963937823211\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clients",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Client",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"usxM9pH0h0aGxyzSFZ5TKA==\",\r\n    \"name\": \"Eng. Sumaya Jalal\",\r\n    \"lastName\": \"Ali\",\r\n    \"mobile\" : \"00963937823211\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/clients/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Client",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/clients/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clients",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sales Management",
+			"item": [
+				{
+					"name": "Transactions",
+					"item": [
+						{
+							"name": "Get Transactions By Sale ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/sales/:id/transactions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										":id",
+										"transactions"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "faYOjE0cr0eznZITtlJCjw=="
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Transaction By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/sales/:saleId/transactions/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										":saleId",
+										"transactions",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "saleId",
+											"value": null
+										},
+										{
+											"key": "id",
+											"value": "93BEFA84-0828-447B-A529-DE7BA7E06BFB"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Transaction",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"93BEFA84-0828-447B-A529-DE7BA7E06BFB\",\r\n    \"sale\": {\r\n        \"id\" : \"faYOjE0cr0eznZITtlJCjw==\"\r\n    },    \r\n    \"product\": {\r\n        \"id\" : \"E3A4B8AA-C4D4-47E9-9225-3C20EADF325C\"\r\n    },\r\n    \"quantity\" : 24,\r\n    \"price\": 55.2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/sales/:id/transactions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										":id",
+										"transactions"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "faYOjE0cr0eznZITtlJCjw=="
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Transaction",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"93BEFA84-0828-447B-A529-DE7BA7E06BFB\",\r\n    \"sale\": {\r\n        \"id\" : \"faYOjE0cr0eznZITtlJCjw==\"\r\n    },    \r\n    \"product\": {\r\n        \"id\" : \"E3A4B8AA-C4D4-47E9-9225-3C20EADF325C\"\r\n    },\r\n    \"quantity\" : 70,\r\n    \"price\": 55.2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/sales/:saleId/transactions/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										":saleId",
+										"transactions",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "saleId",
+											"value": null
+										},
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Transaction",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/sales/:saleId/transactions/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										":saleId",
+										"transactions",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "saleId",
+											"value": null
+										},
+										{
+											"key": "id",
+											"value": "93BEFA84-0828-447B-A529-DE7BA7E06BFB"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sales",
+					"item": [
+						{
+							"name": "Gat All Sales",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/sales",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Sale By ID",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/sales/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "faYOjE0cr0eznZITtlJCjw=="
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Sale",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"faYOjE0cr0eznZITtlJCjw==\",\r\n    \"seller\": \"Samar\",    \r\n    \"client\": {\r\n        \"id\" : \"usxM9pH0h0aGxyzSFZ5TKA==\"\r\n    },\r\n    \"creationDate\" : \"26/1/2022\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/sales",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Sale",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": \"faYOjE0cr0eznZITtlJCjw==\",\r\n    \"seller\": \"Samar\",    \r\n    \"client\": {\r\n        \"id\" : \"usxM9pH0h0aGxyzSFZ5TKA==\"\r\n    },\r\n    \"creationDate\" : \"30/1/2022\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/sales/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": null
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Sale",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/sales/:id",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"sales",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "faYOjE0cr0eznZITtlJCjw=="
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
